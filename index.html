@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your AI Product - Procurement and ERP Solutions</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+          margin: 0;
+          padding: 0;
+          font-family: 'Open Sans', sans-serif;
+          color: white;
+          background-image: url("img/hero-background.jpg");
+          background-size: cover;
+          background-position: center;
+          transition: padding-top 0.3s ease;
+        }
+
+      header {
+          background-color: rgba(139, 139, 139, 0.8);
+          padding: 20px;
+          position: relative;
+          z-index: 1000;
+          transition: transform 0.3s ease; /* Add a smooth transition when header collapses */
+          }
+
+      header.collapsed {
+          transform: translateY(-100%); /* Move the header up to hide it */
+          } 
+
+       header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+
+        header img {
+            width: 100px;
+            height: 100px;
+        }
+
+        #menu {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        #menu li {
+            margin-right: 20px;
+        }
+
+        #menu li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        #menu li a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .hero h1, .hero p {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        .section {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .section h2, .section p {
+            color: white;
+        }
+
+        .key-points {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .point {
+            margin: 0 20px;
+            max-width: 300px;
+        }
+
+        .point i {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        /* Add other styles for the features, about-us, and contact sections as required */
+
+        /* Styles for the Pricing and Plans section */
+        #pricing {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        .pricing-table th,
+        .pricing-table td {
+            border: 1px solid white;
+            padding: 10px 20px;
+        }
+
+        .pricing-table th {
+            background-color: #333;
+            color: white;
+        }
+
+        .pricing-table tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .pricing-table tr:nth-child(odd) {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .pricing-table td {
+            text-align: center;
+        }
+
+        .cta-button {
+            display: block;
+            margin: 20px auto;
+            padding: 15px 40px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #45a049;
+        }
+
+
+        /* Add your custom CSS styles here */
+        #about-us {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+   
+
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #000;
+}
+
+.headshot {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.headshot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.team-member {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #000;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.team-member h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #000;
+    font-size: 24px;
+    margin: 0 8px;
+}
+
+/* Add your custom CSS styles here */
+.hero-background {
+    background-image: url("img/hero-background.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #919191; /* Set font color to white for better visibility */
+}
+
+#contact {
+    padding: 60px 0;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Add some opacity to make the form stand out */
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Rest of the styles remain the same */
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Your AI Product Logo">
+            </a>
+            <ul id="menu">
+                <li><a href="#product-overview">Product Overview</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Rapidly Deploy Procurement and ERP Solutions with AI</h1>
+            <p>Transform your business with our cutting-edge AI-powered software.</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section id="product-overview" class="section">
+        <div class="container">
+            <h2>Product Overview</h2>
+            <p>
+                Modali AI offers a powerful AI-driven platform that streamlines procurement and ERP processes.
+                Our solution optimizes your supply chain, enhances decision-making, and reduces operational costs. We azlso offering AI/ML consulting services.
+            </p>
+            <!-- Add icons for the key points -->
+            <div class="key-points">
+                <div class="point">
+                    <i class="fas fa-globe"></i>
+                    <p>Global Reach - Expand your business worldwide with our AI-powered platform.</p>
+                </div>
+                <div class="point">
+                    <i class="fas fa-chart-line"></i>
+                    <p>Data-Driven Insights - Make informed decisions based on data-driven analytics.</p>
+                </div>
+                <div class="point">
+                    <i class="fas fa-clock"></i>
+                    <p>Time-Saving - Optimize processes and save time with our efficient AI solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="section">
+        <div class="container">
+            <h2>Features and Benefits</h2>
+            <div class="feature">
+                <i class="fas fa-check"></i>
+                <p>Feature 1 - Improve procurement efficiency with automated workflows.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-check"></i>
+                <p>Feature 2 - Real-time data synchronization for accurate ERP insights.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-check"></i>
+                <p>Feature 3 - AI-driven predictive analytics for smarter decision-making.</p>
+            </div>
+            <!-- Add more features and benefits with icons here -->
+        </div>
+    </section>
+
+    <section id="how-it-works" class="section">
+        <div class="container">
+            <h2>How It Works</h2>
+            <p>
+                Our AI-driven platform simplifies procurement and ERP processes to optimize your business operations.
+                Here's how it works:
+            </p>
+            <!-- Add step-by-step guide with icons -->
+            <div class="step">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <h3>Step 1: Data Upload</h3>
+                <p>
+                    Seamlessly upload your procurement and ERP data to our secure cloud-based system.
+                </p>
+            </div>
+            <div class="step">
+                <i class="fas fa-cogs"></i>
+                <h3>Step 2: AI Processing</h3>
+                <p>
+                    Our advanced AI algorithms analyze the data to identify inefficiencies and opportunities for improvement.
+                </p>
+            </div>
+            <div class="step">
+                <i class="fas fa-chart-bar"></i>
+                <h3>Step 3: Insights and Reports</h3>
+                <p>
+                    Get real-time data-driven insights and comprehensive reports to make informed decisions and track performance.
+                </p>
+            </div>
+            <div class="step">
+                <i class="fas fa-rocket"></i>
+                <h3>Step 4: Streamlined Operations</h3>
+                <p>
+                    Implement AI-driven recommendations to streamline procurement and ERP operations, saving time and resources.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="section">
+        <div class="container">
+            <h2>Pricing and Plans</h2>
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Plan</th>
+                        <th>Features</th>
+                        <th>Price</th>
+                        <th>Sign Up</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Basic</td>
+                        <td>
+                            <ul>
+                                <li>Up to 1000 monthly transactions</li>
+                                <li>Standard Support</li>
+                            </ul>
+                        </td>
+                        <td>$49/month</td>
+                        <td><a href="#" class="cta-button">Select</a></td>
+                    </tr>
+                    <tr>
+                        <td>Pro</td>
+                        <td>
+                            <ul>
+                                <li>Up to 5000 monthly transactions</li>
+                                <li>Priority Support</li>
+                                <li>Custom Reports</li>
+                            </ul>
+                        </td>
+                        <td>$99/month</td>
+                        <td><a href="#" class="cta-button">Select</a></td>
+                    </tr>
+                    <tr>
+                        <td>Enterprise</td>
+                        <td>
+                            <ul>
+                                <li>Unlimited transactions</li>
+                                <li>24/7 Premium Support</li>
+                                <li>Premium Features</li>
+                            </ul>
+                        </td>
+                        <td>Custom</td>
+                        <td><a href="#" class="cta-button">Contact Us</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="about-us" class="section">
+      <div class="container">
+          <h2>About Us</h2>
+          <div class="team-members">
+              <div class="team-member">
+                <div class="headshot">
+                  <img src="img/headshot-generic.jpg" alt="Staff 1">
+                </div>
+                  <h3>John Doe</h3>
+                  <p>
+                      John Doe is the CEO and co-founder of Your AI Product. He has extensive experience in the AI industry
+                      and is passionate about using AI to revolutionize procurement and ERP systems.
+                  </p>
+                  <div class="social-links">
+                      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  </div>
+              </div>
+              <div class="team-member">
+                <div class="headshot">
+                  <img src="img/headshot-generic.jpg" alt="Staff 2">
+                </div>
+                  <h3>Jane Smith</h3>
+                  <p>
+                      Jane Smith is the Chief Technology Officer at Your AI Product. With a background in software engineering,
+                      she leads the development of cutting-edge AI solutions for the platform.
+                  </p>
+                  <div class="social-links">
+                      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  </div>
+              </div>
+              <!-- Add more team members here -->
+              <div class="team-member">
+                <div class="headshot">
+                  <img src="img/headshot-generic.jpg" alt="Staff 3">
+                </div>
+                  <h3>Brandon Chiazza</h3>
+                  <p>
+                      Brandon Chiazza the Head of Data Analytics. He is an expert in data science and ensures that our
+                      AI algorithms provide accurate and insightful analytics for our clients.
+                  </p>
+                  <div class="social-links">
+                      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+ 
+
+  <section id="contact" class="section hero-background">
+    <div class="container">
+        <h2>Contact and Support</h2>
+        <div class="contact-form">
+            <form id="contact-form" method="POST" action="contact.php">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Your AI Product. All rights reserved.</p>
+            <!-- Add footer links here -->
+        </div>
+    </footer>
+
+    <script>
+      // Smooth scrolling for navigation links
+      document.addEventListener("DOMContentLoaded", function () {
+          const menuItems = document.querySelectorAll("#menu a");
+
+          menuItems.forEach(item => {
+              item.addEventListener("click", event => {
+                  event.preventDefault();
+                  const targetId = item.getAttribute("href");
+                  const targetElement = document.querySelector(targetId);
+                  const topOffset = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                  window.scroll({
+                      top: topOffset,
+                      behavior: "smooth"
+                  });
+              });
+          });
+      });
+  </script>
+
+<script>
+let prevScrollpos = window.pageYOffset;
+
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    const currentScrollPos = window.pageYOffset;
+
+    if (prevScrollpos > currentScrollPos) {
+        // If the user scrolls up, show the header by removing the 'collapsed' class
+        header.classList.remove('collapsed');
+    } else {
+        // If the user scrolls down, hide the header by adding the 'collapsed' class
+        header.classList.add('collapsed');
+    }
+
+    prevScrollpos = currentScrollPos;
+});
+</script>

@@ -1,0 +1,153 @@
+/* Global styles */
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url("img\hero-background-buildings.png");
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #000;
+}
+
+/* Other section styles */
+.section {
+    padding: 80px 0;
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Add your custom CSS styles here */
+
+/* Styling for larger icons */
+.fa-globe,
+.fa-chart-line,
+.fa-clock,
+.fa-check {
+    font-size: 4rem; /* Adjust the font-size as needed */
+}
+
+/* Background graphics for sections */
+.section {
+    background-image: url("img/background-pattern.jpg"); /* Replace with your background image */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Sample logo using CSS */
+header {
+    background-color: #222;
+    padding: 20px;
+}
+
+header img {
+    width: 150px; /* Adjust the logo size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* LinkedIn icon */
+.linkedin-link img {
+    width: 5rem; /* Adjust the icon size as needed */
+}
+
+/* Styling for the hero section */
+.hero {
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+    background-image: url("/img/hero-background.jpg"); /* Replace with your hero background image */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
